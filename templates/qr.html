@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>ドラゴンのQRコード生成</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 伝説のQRコードを召喚 🔥</h1>
+    <input type="text" id="nameInput" placeholder="勇者の名を刻め">
+    <br>
+    <button onclick="generateQRCode()">召喚開始</button>
+    <div id="qrContainer">
+<img id="qrImage" alt="生成されたQRコード" />
+
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
