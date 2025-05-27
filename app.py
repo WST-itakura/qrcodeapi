@@ -15,7 +15,7 @@ def generate_qr():
 
     # 入力文字をURLエンコードしてURLに埋め込む
     encoded_text = urllib.parse.quote(text)
-    url = f"http://localhost:5000/show?text={encoded_text}"
+    url = f"https://qrapi-itakura.azurewebsites.net/show?text={encoded_text}"
 
     qr = qrcode.make(url)
     img_io = io.BytesIO()
